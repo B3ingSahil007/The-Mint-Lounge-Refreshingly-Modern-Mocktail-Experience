@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
-import heroLeftLeaf from '../../public/public/images/hero-left-leaf.png'
-import heroRightLeaf from '../../public/public/images/hero-right-leaf.png'
+import heroLeftLeaf from '../assets/images/hero-left-leaf.png'
+import heroRightLeaf from '../assets/images/hero-right-leaf.png'
 import glassVideo from '../../public/public/videos/output.mp4'
 import { useGSAP } from '@gsap/react'
 import { SplitText } from 'gsap/all'

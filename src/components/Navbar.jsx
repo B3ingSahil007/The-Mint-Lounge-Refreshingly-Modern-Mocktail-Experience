@@ -1,6 +1,6 @@
 import React from 'react'
 import { navLinks } from '../../constants'
-import mainLogo from '../../public/public/images/logo.png'
+import mainLogo from '../assets/images/logo.png'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
@@ -23,9 +23,9 @@ const Navbar = () => {
 
     return (
         <>
-            <nav>
+            <nav className='backdrop-blur'>
                 <div>
-                    <a href="#" className='flex items-center gap-2'>
+                    <a className='flex items-center gap-2'>
                         <img src={mainLogo} alt="logo" />
                         <p>The Mint Lounge</p>
                     </a>

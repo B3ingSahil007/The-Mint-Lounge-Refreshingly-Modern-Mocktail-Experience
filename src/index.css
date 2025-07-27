@@ -211,7 +211,7 @@ body {
     }
 
     .badge {
-      @apply inline-block rounded-full bg-white text-black px-4 py-2 text-sm font-medium mb-8;
+      @apply inline-block rounded-full bg-yellow text-black px-4 py-2 text-sm font-medium mb-8;
     }
 
     .top-grid {
