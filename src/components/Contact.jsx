@@ -1,7 +1,7 @@
 import React from 'react'
 import footerRightImage from '../../public/images/footer-right-leaf.png'
 import footerLeftImage from '../../public/images/footer-left-leaf.png'
-import { openingHours, socials } from '../../constants'
+import { openingHours, socials } from '../constants'
 import { useGSAP } from '@gsap/react'
 import { SplitText } from 'gsap/all'
 import gsap from 'gsap'

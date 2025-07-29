@@ -3,7 +3,7 @@ import sliderLeft from '../../public/images/slider-left-leaf.png'
 import sliderRight from '../../public/images/slider-right-leaf.png'
 import rightArrow from '../../public/images/right-arrow.png'
 import leftArrow from '../../public/images/left-arrow.png'
-import { sliderLists } from '../../constants'
+import { sliderLists } from '../constants'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 

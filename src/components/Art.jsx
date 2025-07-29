@@ -1,5 +1,5 @@
 import React from 'react';
-import { featureLists, goodLists } from '../../constants';
+import { featureLists, goodLists } from '../constants';
 import checkImage from '../../public/images/check.png';
 import underImage from '../assets/under-img.jpg';
 import { useGSAP } from '@gsap/react';
