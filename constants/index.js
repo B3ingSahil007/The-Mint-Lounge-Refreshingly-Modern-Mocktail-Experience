@@ -12,6 +12,10 @@ const navLinks = [
 		title: "The Art",
 	},
 	{
+		id: "menu",
+		title: "Menu",
+	},
+	{
 		id: "contact",
 		title: "Contact",
 	},
@@ -119,17 +123,17 @@ const openingHours = [
 const socials = [
 	{
 		name: "Instagram",
-		icon: "../src/assets/images/insta.png",
+		icon: "../public/images/insta.png",
 		url: "#",
 	},
 	{
 		name: "X (Twitter)",
-		icon: "../src/assets/images/x.png",
+		icon: "../public/images/x.png",
 		url: "#",
 	},
 	{
 		name: "Facebook",
-		icon: "../src/assets/images/fb.png",
+		icon: "../public/images/fb.png",
 		url: "#",
 	},
 ];
@@ -138,7 +142,7 @@ const sliderLists = [
 	{
 		id: 1,
 		name: "Classic Mojito",
-		image: "../src/assets/images/drink1.png",
+		image: "../public/images/drink1.png",
 		title: "Simple Ingredients, Bold Flavor",
 		description:
 			"Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
@@ -146,7 +150,7 @@ const sliderLists = [
 	{
 		id: 2,
 		name: "Raspberry Mojito",
-		image: "../src/assets/images/drink2.png",
+		image: "../public/images/drink2.png",
 		title: "A Zesty Classic That Never Fails",
 		description:
 			"The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
@@ -154,7 +158,7 @@ const sliderLists = [
 	{
 		id: 3,
 		name: "Violet Breeze",
-		image: "../src/assets/images/drink3.png",
+		image: "../public/images/drink3.png",
 		title: "Simple Ingredients, Bold Flavor",
 		description:
 			"Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
@@ -162,7 +166,7 @@ const sliderLists = [
 	{
 		id: 4,
 		name: "Curacao Mojito",
-		image: "../src/assets/images/drink4.png",
+		image: "../public/images/drink4.png",
 		title: "Crafted With Care, Poured With Love",
 		description:
 			"Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",

@@ -1,6 +1,6 @@
 import React from 'react'
-import heroLeftLeaf from '../assets/images/cocktail-left-leaf.png'
-import heroRightLeaf from '../assets/images/cocktail-right-leaf.png'
+import heroLeftLeaf from '../../public/images/cocktail-left-leaf.png'
+import heroRightLeaf from '../../public/images/cocktail-right-leaf.png'
 import { cocktailLists, mockTailLists } from '../../constants'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'

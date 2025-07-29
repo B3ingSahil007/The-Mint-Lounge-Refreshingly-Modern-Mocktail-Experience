@@ -1,6 +1,6 @@
 import React from 'react'
-import footerRightImage from '../assets/images/footer-right-leaf.png'
-import footerLeftImage from '../assets/images/footer-left-leaf.png'
+import footerRightImage from '../../public/images/footer-right-leaf.png'
+import footerLeftImage from '../../public/images/footer-left-leaf.png'
 import { openingHours, socials } from '../../constants'
 import { useGSAP } from '@gsap/react'
 import { SplitText } from 'gsap/all'
@@ -10,8 +10,11 @@ const Contact = () => {
     useGSAP(() => {
         const titleSplit = SplitText.create('#contact h2', { type: 'words' });
         const timeline = gsap.timeline({ scrollTrigger: { trigger: '#contact', start: 'top center' }, ease: 'power1.inOut' });
-        timeline.from(titleSplit.words, { opacity: 0, yPercent: 100, stagger: 0.02 }).from('#contact h3, #contact p', { opacity: 0, yPercent: 100, stagger: 0.02 }).to('#f-right-leaf', { y: '-50', duration: 1, ease: 'power1.inOut' }).to('#f-left-leaf', { y: '-50', duration: 1, ease: 'power1.inOut' }, '<');
+        timeline.from(titleSplit.words, { opacity: 0, yPercent: 100, stagger: 0.02 }).from('#contact h3, #contact p', { opacity: 0, yPercent: 100, stagger: 0.02 });
 
+        const parallaxTimeline = gsap.timeline({ scrollTrigger: { trigger: '#contact', start: 'top 20%', end: 'bottom 90%', scrub: true } });
+        parallaxTimeline.from('#f-right-leaf', { x: 100, y: -110 });
+        parallaxTimeline.from('#f-left-leaf', { x: -90, y: 100 });
     }, [])
 
     return (

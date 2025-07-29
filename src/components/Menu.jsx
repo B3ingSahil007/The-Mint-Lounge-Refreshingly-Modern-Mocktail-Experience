@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react'
-import sliderLeft from '../assets/images/slider-left-leaf.png'
-import sliderRight from '../assets/images/slider-right-leaf.png'
-import rightArrow from '../assets/images/right-arrow.png'
-import leftArrow from '../assets/images/left-arrow.png'
+import sliderLeft from '../../public/images/slider-left-leaf.png'
+import sliderRight from '../../public/images/slider-right-leaf.png'
+import rightArrow from '../../public/images/right-arrow.png'
+import leftArrow from '../../public/images/left-arrow.png'
 import { sliderLists } from '../../constants'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
@@ -15,8 +15,13 @@ const Menu = () => {
     useGSAP(() => {
         gsap.fromTo('#title', { opacity: 0 }, { opacity: 1, duration: 1 })
         gsap.fromTo('.cocktail img', { opacity: 0, xPercent: -200 }, { xPercent: 0, opacity: 1, duration: 1, ease: 'power1.inOut' })
-        gsap.fromTo('.details h2',{ opacity: 0, yPercent: 100 }, { yPercent: 0, opacity: 100, ease: 'power1.inOut' })
-        gsap.fromTo('.details p',{ opacity: 0, yPercent: 100 }, { yPercent: 0, opacity: 100, ease: 'power1.inOut' })
+        gsap.fromTo('.details h2', { opacity: 0, yPercent: 100 }, { yPercent: 0, opacity: 100, ease: 'power1.inOut' })
+        gsap.fromTo('.details p', { opacity: 0, yPercent: 100 }, { yPercent: 0, opacity: 100, ease: 'power1.inOut' })
+
+        const parallaxTimeline = gsap.timeline({ scrollTrigger: { trigger: '#menu', start: 'top 40%', end: 'bottom 90%', scrub: true } });
+        parallaxTimeline.from('#m-right-leaf', { x: 100, y: 100 });
+        parallaxTimeline.from('#m-left-leaf', { x: -100, y: 100 });
+
     }, [currentIndex])
 
     const goToSlide = (index) => {

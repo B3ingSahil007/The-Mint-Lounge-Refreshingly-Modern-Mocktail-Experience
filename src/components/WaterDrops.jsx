@@ -11,7 +11,7 @@ const WaterDrops = () => {
             style={{
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 8}s`,
+              animationDelay: `${Math.random() * 2}s`,
               width: `${Math.random() * 15 + 2}px`,
               height: `${Math.random() * 15 + 5}px`,
             }}

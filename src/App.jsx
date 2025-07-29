@@ -26,7 +26,7 @@ const App = () => {
         <Menu />
         <Contact />
       </main>
-      {/* <WaterDrops /> */}
+      <WaterDrops />
     </>
   )
 }
