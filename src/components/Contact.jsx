@@ -12,7 +12,7 @@ const Contact = () => {
         const timeline = gsap.timeline({ scrollTrigger: { trigger: '#contact', start: 'top center' }, ease: 'power1.inOut' });
         timeline.from(titleSplit.words, { opacity: 0, yPercent: 100, stagger: 0.02 }).from('#contact h3, #contact p', { opacity: 0, yPercent: 100, stagger: 0.02 });
 
-        const parallaxTimeline = gsap.timeline({ scrollTrigger: { trigger: '#contact', start: 'top 20%', end: 'bottom 90%', scrub: true } });
+        const parallaxTimeline = gsap.timeline({ scrollTrigger: { trigger: '#contact', start: 'top 10%', end: 'bottom bottom', scrub: true } });
         parallaxTimeline.from('#f-right-leaf', { x: 100, y: -110 });
         parallaxTimeline.from('#f-left-leaf', { x: -90, y: 100 });
     }, [])

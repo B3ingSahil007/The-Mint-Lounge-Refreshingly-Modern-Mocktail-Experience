@@ -18,7 +18,7 @@ const Menu = () => {
         gsap.fromTo('.details h2', { opacity: 0, yPercent: 100 }, { yPercent: 0, opacity: 100, ease: 'power1.inOut' })
         gsap.fromTo('.details p', { opacity: 0, yPercent: 100 }, { yPercent: 0, opacity: 100, ease: 'power1.inOut' })
 
-        const parallaxTimeline = gsap.timeline({ scrollTrigger: { trigger: '#menu', start: 'top 40%', end: 'bottom 90%', scrub: true } });
+        const parallaxTimeline = gsap.timeline({ scrollTrigger: { trigger: '#menu', start: 'top 20%', end: 'bottom bottom', scrub: true } });
         parallaxTimeline.from('#m-right-leaf', { x: 100, y: 100 });
         parallaxTimeline.from('#m-left-leaf', { x: -100, y: 100 });
 
