@@ -209,7 +209,7 @@ body {
   }
 
   #about {
-    @apply min-h-screen py-28 2xl:px-0 px-5 container mx-auto;
+    @apply min-h-screen py-28 2xl:px-0 px-5 container mx-20 w-auto;
 
     .content {
       @apply grid grid-cols-1 lg:grid-cols-12 gap-5;
@@ -272,7 +272,7 @@ body {
     }
 
     .content {
-      @apply flex md:flex-row flex-col justify-between md:mb-16 md:mt-0 mt-40 gap-10;
+      @apply flex md:flex-row flex-col justify-between mx-20 md:mb-16 md:mt-0 mt-40 gap-10;
     }
 
     .cocktail-img {
@@ -318,7 +318,7 @@ body {
     }
 
     .content {
-      @apply flex flex-col justify-between items-center container mx-auto relative;
+      @apply flex flex-col justify-between items-center container mx-20 w-auto relative;
 
       .arrows {
         @apply flex items-center justify-between w-full absolute mt-20;

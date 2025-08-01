@@ -17,7 +17,7 @@ const Cocktails = () => {
             <section id='cocktails'>
                 <img id='c-left-leaf' src={heroLeftLeaf} alt="Cocktail_Left_Leaf" />
                 <img id='c-right-leaf' src={heroRightLeaf} alt="Cocktail_Left_Leaf" />
-                <div className="list">
+                <div className="list mx-20 w-auto flex justify-between items-center">
                     <div className="popular">
                         <h2>Most Popular Cocktails :</h2>
                         <ul>

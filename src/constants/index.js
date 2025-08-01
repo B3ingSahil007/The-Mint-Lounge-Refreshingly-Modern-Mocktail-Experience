@@ -106,11 +106,12 @@ const goodLists = [
 
 const storeInfo = {
 	heading: "Where to Find Us",
-	address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
+	address: "123, Sunset Boulevard, Hollywood, Los Angeles, CA 90028",
 	contact: {
-		phone: "(555) 987-6543",
-		email: "hello@jsmcocktail.com",
+		phone: "9638473047",
+		email: "chhipasahil162@gmail.com",
 	},
+	copyright: "© 2025 - Made By Sahil Miyawala",
 };
 
 const openingHours = [

@@ -24,7 +24,7 @@ const Navbar = () => {
     return (
         <>
             <nav className='backdrop-blur'>
-                <div>
+                <div className='mx-20 w-auto flex justify-between items-center'>
                     <a href="#" className='flex items-center gap-2'>
                         <img src={mainLogo} alt="logo" />
                         <p>The Mint Lounge</p>
